@@ -17,6 +17,7 @@ gem 'puma', '~> 5.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'devise-jwt'
+gem 'dotenv-rails'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -28,7 +29,8 @@ gem 'rack-cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'sqlite3'
+  # gem 'sqlite3'
+  gem 'pg'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 

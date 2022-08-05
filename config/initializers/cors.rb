@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://minance-app.herokuapp.com'
+    origins 'https://minance-api.herokuapp.com'
 
     resource '*',
       headers: :any,
